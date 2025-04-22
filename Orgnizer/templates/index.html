@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Photo Organizer by Year</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📸 Photo Organizer</h1>
+
+    <label>Source Folder:</label>
+    <input type="text" id="src" placeholder="C:/Users/parmida/Pictures">
+
+    <label>Destination Folder:</label>
+    <input type="text" id="dst" placeholder="C:/Users/parmida/SortedPhotos">
+
+    <button id="orgBtn" onclick="organize()">Organize</button>
+
+    <div id="loading" style="display: none;">
+      <div class="spinner"></div>
+      <p>Organizing photos, please wait...</p>
+    </div>
+
+    <p id="status"></p>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
